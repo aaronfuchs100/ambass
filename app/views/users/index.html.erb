@@ -6,6 +6,21 @@ $(function(){
 
 </script>
 
+<div class = "about">
+  <div class = "amb-logo">
+    <h4>Ambassador Logo</h4>
+  </div>
+  <div class = "amb-info">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+  </div>
+  <div class = "amb-login">
+    <div class = "btn-login"><%= link_to 'Login', login_path , :class => 'btn btn-warning' %></div><br>
+
+  </div>
+</div>
+
+
+
 <div class = "filter">
     <ul id="test">
           <a href="#" data-filter="*">All (<%= @users.count%>)</a>
@@ -17,7 +32,7 @@ $(function(){
 
 
 
-  <div class = "design">
+  <div id = "design">
     <% @users.each do |user| %>
           <div class = "photo <%= user.region.try :downcase %>" title = "<%= "#{user.first_name} #{user.last_name} </p>" %>" >
              <%= link_to image_tag(user.avatar.thumb, :class => "avatar"), user, data: {'toggle' => 'modal', 'target' => '#modal'}  %>

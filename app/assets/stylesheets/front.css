@@ -1,4 +1,52 @@
 
+/****   About    ****/
+
+.about{
+  padding-top: 10px;
+  border: 1px dotted gray;
+  height: 100px;
+
+}
+
+.amb-logo{
+  margin: 10px;
+  height: 80px;
+  width: 200px;
+  float: left;
+}
+
+.amb-logo h4  {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.amb-info{
+  margin: 10px;
+  margin-left: 25px;
+  height: 80px;
+  width: 415px;
+  float: left;
+}
+
+.amb-info p {
+  margin-top: 10px;
+  color: #64767F;
+}
+
+.amb-login{
+  margin: 10px;
+  height: 80px;
+  width: 200px;
+  float: right;
+}
+
+.btn-warning {
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+
+
 
 /****  Filtering ****/
 
@@ -12,6 +60,7 @@
   margin: 10px;
   padding: 3px 15px;
   border: 1px solid black;
+  border-radius: 5px;
   text-decoration: none;
 }
 
