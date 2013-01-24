@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: ambassador_development
   pool: 5
-  username: kevin
+  username: postgres
   host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -44,5 +44,5 @@ test:
   database: ambassador_test
   min_messages: warning
   pool: 5
-  username: kevin
+  username: postgres
   host: localhost
