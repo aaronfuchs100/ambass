@@ -1,1370 +1,178 @@
-@charset "UTF-8";
-/* CSS Document */
+
+/****   About    ****/
+
+.about{
+  padding-top: 10px;
+  border: 1px dotted gray;
+  height: 100px;
+
+}
+
+.amb-logo{
+  margin: 10px;
+  height: 80px;
+  width: 200px;
+  float: left;
+}
+
+.amb-logo h4  {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.amb-info{
+  margin: 10px;
+  margin-left: 25px;
+  height: 80px;
+  width: 415px;
+  float: left;
+}
+
+.amb-info p {
+  margin-top: 10px;
+  color: #64767F;
+}
+
+.amb-login{
+  margin: 10px;
+  height: 80px;
+  width: 200px;
+  float: right;
+}
+
+.btn-warning {
+  text-decoration: none;
+  margin-left: 100px;
+  margin-top: 20px;
+}
 
 
- ul.share-links{
-		list-style: none;
-		margin: 10px 0px 10px 0px;
-	}
- ul.share-links p{
-	font-weight: bold;
-	color: #022f45;
+
+
+/****  Filtering ****/
+
+.filter {
+  height: 50px;
+  border: 1px dotted black;
+}
+
+.filter a {
+  float: left;
+  margin: 10px;
+  padding: 3px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+
+
+/****  Main Content ****/
+
+
+ .user{
+  border: 1px dotted gray;
+  margin: 10px;
+  padding: 10px;
+  height: 150px;
+  background-color: red;
+  width: 500px;
+
  }
-ul.share-links li{
-		float: left;
-		margin-right: 5px;
-	}
-ul.share-links a.li:hover{
-		margin-top: -2px;
-	}
-.share-links img{margin: 0px 3px -7px 3px;}
 
- .p-light{color: #92a5a6;text-shadow: 1px 1px #fff;}
-
- .blue-block{background: #E8F2F7; padding:15px; margin-bottom: 20px;}
-
-
-/* -------------- HEADER ------------------*/
-
-#header{
-	background: url(/assets/bg-header-light.jpg);
-	height: 72px;
-		border-bottom: 1px solid #e8e8e8;
-	padding:10px 0px 10px 0px;
-	/*box-shadow: 1px 1px 1px #cecece;*/
-	width: 100%;
-	z-index: 98;
-	}
-#header #logo{margin-top: 10px;}
-#header ul.top-nav{
-	float: right;
-	list-style: none;
-	background: #4f8199;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 0px 0px 15px 15px;
-	height: 20px;
-	padding:10px 15px 0px 0px;
-	margin-top: -11px;
-	color: white;
-	position: relative;
-	z-index: 130;
-	}
-#header ul.top-nav li{
-	float: left;
-	margin-left: 15px;
-	font-size: 11px;
-	font-weight: normal;
-
-	}
-#header ul.top-nav li a{
-	color: white;
-	text-decoration: none;
-	}
-#header ul.top-nav .button-login{
-	font-weight: normal;
-	}
-#header ul.top-nav .button-login a{
-	color: white;
-	}
-#header ul.top-nav a:hover{color: #7fc8ea;}
-
-#header ul.top-nav ul li {
-	list-style: none;
-}
-#header ul.darker{background: #34677f ;margin-left:2px;}
-#header ul.nav{
-	clear: right;
-	float: right;
-	position: relative;
-	z-index: 200;
-	list-style: none;
-	margin-top: 30px;
-	}
-#header ul.nav li{
-	float: left;
-	margin-left: 16px;
-	margin-right: 16px;
-	font-weight:normal;
-	font-size:16px;
-	text-align: center;
-	}
-#header ul.nav li a{
-	color: #185674;
-	text-decoration: none;
-	padding: 10px 15px 10px 15px;
-	}
-
-#header ul.nav li a:hover{
-	background-image: url(/assets/nav-triangle.png);
-	padding-bottom: 26px;
-	color: #3facdf;
-	background-repeat:no-repeat;
-	background-position:bottom;
-
-	}
-#header ul.nav li a.current{
-	color: white;
-	text-shadow: 1px 1px #3e6679;
-	background-repeat:no-repeat;
-	background-position:bottom;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	behavior: url(/assets/ie-css3.htc);
-	border-radius: 15px;
-	border-top: #3e6679 solid 1px;
-	background: #4f8199;
-	padding: 7px 12px 8px 12px;
-	}
-#header a.share-tag{
-	background-image: url(/assets/share-tag.png);
-	background-repeat:no-repeat;
-	width: 96px;
-	height: 34px;
-	z-index:100;
-	float: right;
-	clear:both;
-	margin:5px 0px 7px 0px;
-	padding: 3px 0px 5px 12px;
-	text-decoration: none;
-	position: relative;
-	font-size: 11px;
-	}
-#header a.share-tag:hover{}
-#header a.share-tag img{
-	margin: 0px 3px -5px 0px;
-
-	}
-.st_sharethis_custom{
-        background: url(/assets/icon-sharethis.png) no-repeat scroll left top transparent;
-        padding:0px 16px 10px 22px;
-        height: 19px;
-        margin-top: -2px;
-        display:block;
-}
-.st_sharethis_custom p{ display: inline-block;margin-top: 5px; font-size: 11px;color: #4f8199;}
-
-#header .search{
-	float: right;
-	width: 129px;
-	height: 15px;
-	padding: 5px 10px 5px 25px;
-	border: 0;
-	font-size: 11px;
-	color: #999;
-	margin: -3px 0px 0px 0px;
-	background: url(/assets/srch.gif) left center no-repeat;
-	display: block;
-	}
-#header .search:focus {
-	color: #666;
-	background: url(/assets/srch_.gif) left center no-repeat;
-	}
-#header .text{border: 0;}
-#register{padding: 40px 0px 40px 0px;}
-#register h1:before{content: url(/assets/logo-heading.png); margin-right: 10px;float: left; display: inline-block; margin-bottom: -3px;}
-#register #contact-us{margin-left: 30px;display:block; padding: 11px 0px 0px 30px;}
-#register .line-fade{float:right;margin-top: -330px;position: relative;}
-
-#cookie-notice{
-  top: 0px;
-  width: 100%;
-  background: #dceef7;
-  border-bottom: #b4d1df thin solid;
-  box-shadow: 0px 2px 2px #e0e0e0;
-  text-align: center;
-  display:inline-block;
-  padding: 5px 0 7px 0;
-  color: #022f45;
-  text-shadow: white 1px 1px 1px;
-  font-weight: bold;
+ .clear{
+    clear: both;
   }
- #cookie-notice #close-cookie-notice img{
- 	top: 3px;
-	position: relative;
-	margin-left: 10px;
-	width: 15px;
-	height: 15px;
-	}
 
-/* -------------- FEATURE ------------------*/
-
-#feature{
-	width: 100%; clear: both; background: url(/assets/bg-dark-texture.jpg);
-	}
-
-#feature h1 {padding-top: 50px; font-weight:normal; font-size: 36px;}
-#feature h3{padding-top: 20px;font-size:20px;}
-#feature p{
-	font-size: 14px;
-	padding: 10px 0px 10px 0px;
-	line-height: 18px;
-	}
-#feature .jshowoff{width: 100%; }
-#feature .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#feature ul#slider{
-	margin-top: -2px;
-	height: 400px;
-	width: 100%;
-	background-color: #021c29;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-}
-#feature ul#slider li.slide-1 {
-background-image: url(/assets/slides/invest-home/Invest-home-page-slide01.jpg);
-	background-position: center;
-	height: 400px;
-	background-repeat: no-repeat;
+ .info{
+  border: 1px dotted red;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
  }
-#feature ul#slider li.slide-2 {
-background-image: url(/assets/slides/invest-home/Invest-home-page-slide02.jpg);
-	background-position: center;
-	height: 400px;
-	background-repeat: no-repeat;
+ .avatar{
+  display: inline-block;
+  float: left;
  }
 
-#feature ul#slider li.slide-3 {
-background-image: url(/assets/slides/invest-home/Invest-home-page-slide03.jpg);
-	background-position: center;
-	height: 400px;
-	background-repeat: no-repeat;
+ .photo{
+  float: left;
+  margin: 10px;
+  padding: 10px;
  }
-  #feature ul#slider li.slide-3 img{margin: 15px 30px 15px 0px;}
+ .photo:hover{
+  background-color: gray;
+  border-radius: 10px;
+ }
+ .photo.america:hover{
 
-#feature ul#slider li.slide-4 {
- background-image: url(/assets/slides/invest-home/Invest-home-page-slide04.jpg);
-	background-position: center;
-	height: 400px;
-	background-repeat: no-repeat;
+  background-color: red;
+  border-radius: 10px;
 
-	}
-#feature-items{padding-bottom: 30px;}
-#feature-items h1{margin:0px;padding: 0px;}
-#feature1{text-align: center;}
-#feature1 h1{margin-top: 20px;}
-#feature2{text-align: center; }
-#feature2 h1{margin-top: 18px;}
-#feature3{text-align: center;padding-top: 15px;}
-#feature3 h1{margin-top: 32px;}
-#feature3 img{}
-#feature-items .line-fade{float:right;margin-top: -225px;}
-#form-box{
-	background:url(/assets/form-box.png);
-	background-repeat:no-repeat;
-	height: 200px;
-	width: 307px;
-	display: block;
-	float: right;
-	padding:25px;
-	margin: -320px -40px 0px 0px;
-	}
+ }
 
- #form-box h3{
-	color: white;
-	margin: -10px 0px 0px 0px;
-	font-size:24px;
-	font-weight:normal;
-	padding-bottom: 20px;
-}
-#form-box .form-b{
-	margin-left:4px;
+ #design {
+  border: 1px black dotted;
+ }
+
+
+ /****  TipTip Styles ****/
+
+ #tiptip_holder p {
+  font-size: 8px;
+  background-color: green;
+ }
+
+ /**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
 }
 
-.form-b select.droplist {
-	width: 247px;
-	height: 32px;
-	margin-right: 20px;
-	cursor: pointer;
-	}
-
-#form-box #more-info{margin-left: 2px;margin-top: 14px;}
-.form-b .droplist{
-	margin:10px 0px 2px 0px;
-	padding: 7px;
-	border: 1px solid #b7b7b7;
-	background: white url(/assets/droplist-arrow.png) center right no-repeat;
-	}
-a.submit-hi {
-	background:url(/assets/button-orange-hi.png);
-	height: 26px;
-	width: 147px;
-	font-family: 'Rokkitt', serif;
-	color: white;
-	line-height: 24px;
-	font-size: 24px;
-	text-align: center;
-	text-shadow: 1px 1px 1px #934410;
-	-webkit-appearance: none;
-	padding: 6px 8px 6px 0px;
-	margin: 20px 0px 0px 0px;
-	border: 0;
-	cursor: pointer;
-	display: inline-block;
-
-}
-a.submit-hi:hover{color: #6c3308; text-shadow: 1px 1px 1px #ffd257;}
-a.submit-hi:active{color: #231002; text-shadow: 1px 1px 1px #ffd257;}
-
-
-.form-b .message #more-info{
-	color: white;
-	font-family: 'Rokkitt', serif;
-	font-size: 20px;
-	background: #061a21;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border: none;
-	display:inline;
-	padding: 5px 8px;
-	}
-.form-b .message #more-info:hover{cursor: pointer; color:#cecece;background: #0f3440; }
-
-
-#investors-main{background: url(/assets/bg-dark-texture.jpg);}
-#investor-home{background: url(/assets/bg-dark-texture.jpg);z-index:0;display: block;  background: url(/assets/bg-dark-texture.jpg); padding:30px 0px 125px 0px; margin-top: -20px; margin-bottom: -175px;}
-#investor-front-main{position: relative; }
-#investor-front-main .line-fade{float:right;margin-top: -250px;}
-
-
-/* ---------------Home Main -------------*/
-#home{width: 100%; clear: both; background: url(/assets/bg-dark-texture.jpg); margin-bottom: -25px;}
-#home-feature{background: url(/assets/bg-home-feature.png); width: 939; height: 419px; margin: 40px 0px 30px 0px;}
-#home-top h2{font-family: arial, sans-serif; color: #7b8f9a; font-size: 25px; text-align: center; font-weight: normal;}
-#home-top h2 strong{color: #ea7d2a; text-transform: uppercase; font-weight: normal;}
-#home-top img.shadow{margin: 20px 0px 30px 0px; opacity: 0.5;}
-#home-top .video{padding: 48px 0px 0px 30px;}
-#home-top .video iframe{border: 1px solid #186b8f;}
-#home-top .button-orange{
-	background: #fb9303;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	padding: 8px 11px;
-	color: #fff;
-	font-weight: bold;
-	text-shadow: 1px 1px 0px #e8610f;
-	font-size: 14px;
-	box-shadow: inset 0px -10px 30px #e8610f;
-	float: right;
-	display: block;
-	}
-	#home-top .button-orange:hover{background: #f37528; }
-#home-top .learn{clear:both; margin: 100px 50px 0px 0px;}
-#home-top .loan{clear:both; margin: 140px 50px 0px 0px;}
-/* ---------------Home Borrowers -------------*/
-
-#feature ul#slider li.slide-hb-1{
-	height: 400px;
-	}
-
-.form-c{
-
-	}
-.form-c .droplist{
-	margin:0px 0px 2px 0px;
-	padding: 7px;
-	border: 1px solid #b7b7b7;
-	width: 280px;
-	background: white url(/assets/droplist-arrow.png) center right no-repeat;
-	float: left;
-	}
-
-.form-c input.submit-hi{
-	background:url(/assets/button-orange-hi.png);
-	height: 39px;
-	width: 155px;
-	font-family: 'Rokkitt', serif;
-	color: white;
-	font-size: 24px;
-	text-shadow: 1px 1px 1px #934410;
-	-webkit-appearance: none;
-	padding: 6px 8px 6px 8px;
-	margin: -5px 0px 0px 20px;
-	border: 0;
-	cursor: pointer;
-	float: left;
-}
-.form-c input.submit-hi:hover{color: #6c3308; text-shadow: 1px 1px 1px #ffd257;}
-.form-c input.submit-hi:active{color: #231002; text-shadow: 1px 1px 1px #ffd257;}
-
-.form-c label{
-	float: left;
-	color: white;
-	font-family: 'Rokkitt', serif;
-	font-size: 24px;
-	text-shadow: black 1px 1px 1px;
-	text-align: left;
-	width: 120px;
-	margin-top: 1px;
-	}
-.form-c .message a{
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	float: left;
-	text-shadow:black 1px 1px 1px;
-	text-decoration:none;
-	margin: 5px 0px 0px 20px;
-	}
-.form-c .message a:hover{color: #ec802b;}
-
-#looking-to-invest{
-	border-bottom: 1px solid #efefef;
-	margin-bottom: 20px;
-	margin-top:-30px;
-	padding: 0px 0px 10px;
-	display: block;
-	}
-#looking-to-invest h1{display: inline; margin: 0px; color: #e67527;}
-#looking-to-invest p{display: inline; margin: 0px; font-size: 21px; color: #073851;}
-
-/*---------------BORROWERS LEARN MORE-------------*/
-
-#borrowers-learn-more{}
-#borrowers-learn-more #main{height: 260px;}
-#borrowers-learn-more p {font-size: 14px; line-height: 18px;}
-#borrowers-learn-more #form-box{margin:10px -40px 0px 0px; padding-top: 45px; float:right;}
-#borrowers-learn-more #form-box .form-b{margin: 0px 0px 0px 4px;}
-#borrowers-learn-more #form-box h3{margin-left: 4px;}
-#borrowers-learn-more #student_more_info{margin-left: 10px;}
-#borrowers-learn-more #how-it-works{
-	clear: both;
-	background: url(/assets/bg-dark-texture.jpg);
-	border-top: 3px solid #e0e7e9;
-	border-bottom: 3px solid #e0e7e9;
-	padding: 20px 0px 0px 0px;
-	margin:0px 0px 30px 0px;
-	}
-
-#borrowers-learn-more #how-it-works ul{
-	list-style: none;
-	height: 100px;
-	}
-#borrowers-learn-more #how-it-works ul li{
-	width: 115px;
-	float: left;
-	margin: 10px 40px 0px 5px;
-	}
-#borrowers-learn-more .sidebar{
-	margin-left: 60px; border: 1px dashed #cecece; padding: 20px;
-	width: 250px;
-	margin-right: -60px;
-	}
-#borrowers-learn-more h4{font-size: 14px; color: #022f45;}
-#borrowers-learn-more #faq{border-top: solid 1px #cccccc; padding: 20px 0px 20px 0px; margin-top: 20px;}
-#borrowers-learn-more #faq h1{clear: both;}
-#borrowers-learn-more #faq #faq-main{margin-left: 0px;}
-
-/* -------------- BAR ------------------*/
-
-#bar{
-	background: #022f45;
-	height: 40px;
-	padding-top: 15px;
-	position: relative;
-	width: 100%;
-	display: block;
-	z-index:10;
-	top: -20px;
-	}
-#bar #bar-content{margin-top: 0px;}
-#bar h3{
-	color: #7fc8ea;
-	float: left;
-	font-weight: normal;
-	}
-#bar ul{
-	list-style: none;
-	float: right;
-	padding-top: 5px;
-	}
-#bar ul li{
-	margin-right: 15px;
-	float: left;
-	}
-#bar ul li a{
-	color: #d2e2ea;
-	text-decoration:none;
-	}
-#bar ul li a:hover{color: #7fc8ea;}
-#bar ul li img{margin-top:-3px;}
-#bar .more-button{
-		background: #031c29;
-		padding: 4px 6px 4px 6px;
-		margin: -5px 0px 0px 20px;
-		font-family: 'Rokkitt', serif;
-		font-size: 18px;
-		color: white;
-	}
-
-#bar-borrowers{height: 75px;background: #022f45;padding-top: 35px;padding-left: 160px;z-index:20;position: relative;}
-#bar-borrowers .form-c label{font-size: 37px; width: 200px;font-weight: bold;}
-#bar-borrowers .form-c .droplist{height: 43px;font-size: 16px;color: #909090;margin-top: -2px;}
-#bar-borrowers .form-c .submit-hi{margin-top: 0px;}
-#bar-borrowers .form-c .message a{margin-top: 10px;float: none;font-weight: bold;position:absolute;}
-
-#bar-borrowers .form-c input.submit-big-orange{
-	background:url(/assets/button-big-orange.png);
-	height: 47px;
-	width: 182px;
-	-webkit-appearance: none;
-	border: 0;
-	cursor: pointer;
-	position: relative;
-	text-indent: 1000px;
-	font-size: 0;
-	line-height: 0;
-	margin: -4px 0px 0px 15px;
-	}
-#bar-borrowers .form-c input.submit-big-orange:hover{margin-top: -3px;}
-
-/* -------------- MAIN CONTENT ------------------*/
-
-#borrowers-main{background: url(/assets/bg-dark-texture.jpg); padding:80px 0px 30px 0px; position:relative; top:-50px;margin-bottom: -100px;display: block;}
-
-#content{
-	clear:both;
-	}
-
-#main{clear: both;padding-top: 0px;}
-
-#funded-schools{
-	background: #e8f2f7;
-	padding:15px;
-	float: right;
-	}
-#funded-schools h3 {color: #0c415b;}
-#funded-schools ul{}
-#funded-schools ul li{margin:7px 0px 7px 20px;}
-#funded-schools ul li a{text-decoration: none;}
-#funded-schools ul li a:hover{text-decoration: underline;}
-
-
-.contact{
-	}
-
-.contact .contact-icon{ display: block; float:left; clear: left; margin-right: 15px;padding: 7px 0px 10px 0px;}
-.contact .address-icon{display: block; float:left; clear: left; margin-right: 10px;padding: 3px 0px 75px 0px;}
-.contact .telephone{margin-top: 7px; display: block; float:left;clear: left;margin-right: 15px;padding: 7px 0px 10px 0px;}
-.contact p{margin-bottom: 10px;}
-
-.linkedin{background-image: url(/assets/icon-share-linkedin.png);width: 74px; height: 74px;}
-
-.logos{
-
-	padding-left: 5px;
-	height: 270px;
-}
-#borrowers-main .line-fade{float:right;margin-top: -250px;}
-.logos ul{
-	list-style:none;
-	clear: both;
-
-	}
-.logos ul li{ padding: 5px;}
-
-.logos-right{float: right;padding-right: 15px;}
-.logos-left{float: left;}
-
-.link-long{
-	font-family: 'Rokkitt', serif;
-	font-weight:normal;
-	font-size:19px;
-	margin: 5px 0px 5px 0px;
-	background: #d8e2e7;
-	text-decoration:none;
-	display: block;
-	border-top: #bec9ce 1px solid;
-	position: relative;
-	z-index:100;
-	}
-.link-long a{
-	color: #022f45;
-	width: 940px;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	text-decoration: none;
-	padding: 10px 0px 10px 0px;
-	clear: both;
-	}
-.link-long a:hover{
-	color: #022f45;
-	cursor: pointer;
-}
-.link-long .orange{color: #ff7200;}
-.link-long a:hover .orange{color: #022f45;}
-
-.box{
-background: #f5f4f4;
-	float: right;
-	border: solid 1px #c7c7c7;
-	width: 260px;
-	padding: 5px 10px 20px 20px;
-	margin-bottom: 150px;
-	}
-
-.box h1{
-	margin: 10px 7px 10px 0px;
-	padding-bottom: 10px;
-	border-bottom: solid 1px #c7c7c7;
-	}
-.box .form-a{margin-top:-5px;}
-.box h1 img{margin-right:10px;margin-bottom: -3px;}
-
-#login-page{ }
-#session-new{margin-top: 40px;display: block;}
-#login-selling-points{margin-left: 50px;}
-#login-selling-points h3{font-size: 20px;}
-#login-selling-points h3 img{margin-left: -45px;margin-right: 10px; margin-bottom: -8px;}
-#login-selling-points p{margin-top:5px; font-size: 14px; line-height: 18px;}
-.box label{text-align: left;padding-bottom: 3px;}
-.box .submit{clear: both; display: block;}
-.remember-email{float: right; margin-top: -20px;padding-right: 20px; display: block;}
-
-#stats{margin-left: 20px; margin-bottom: 20px;}
-.big-stats{
-	font-family: 'Rokkitt', serif;
-	font-size: 28px;
-	font-weight: 400;
-	color: #697578;
-	text-shadow: 1px 1px #fff;
-	}
-.link{display: block; clear:both;}
-.link img{margin: 20px 10px -5px 0px;}
-
-.link-grey{
-	background:#a7bab9 url(/assets/link-left.png) left no-repeat;
-	padding:  2px 12px 0px 30px;
-	height: 22px;
-	display: inline-block;
-	font-family: 'Rokkitt', serif;
-	color: white;
-	text-decoration: none;
-	font-size: 15px;
-	line-height: 22px;
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-	}
-a.link-grey:hover{background-color:#8fa1a0;color: white;}
-.team-lilly-icon{margin-bottom: -7px; margin-right: 7px;}
-
-.more-schools ul{border: red solid 1px; list-style: none;}
-
-/*---------------FUNDED LEARN MORE-------------*/
-
-.school-main{
-	padding: 15px;
-	background: white;
-	border-left: 1px solid #cecece;
-	border-right: 1px solid #cecece;
-	border-bottom: 1px solid #cecece;
-	border-top: 6px solid #b60d22;
-}
-.school-main p{
-	font-size: 14px;line-height: 18px;
-	}
-
-.school-header img{float: left; margin-right: 15px;}
-.school-header h1{padding-top: 50px;}
-
-.school-invest{border-top: 1px solid #cecece; padding-top: 15px; margin-top: 20px; }
-.school-invest h3{color: #b60d22;font-weight: normal;}
-.school-invest a.register-button{
-	background: #b60d22;
-	color: white;
-	text-decoration:none;
-	font-size: 24px;
-	padding: 1px 9px 1px 9px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	}
-.school-invest a.register-button:hover{background: #ed822c;}
-
-.testimonials{
-	padding-top: 30px;
-	}
-.testimonials p{width:575px; margin-left: 40px; font-size: 14px;}
-.testimonials img{
-	float: left;
-
-	margin-right: 10px;
-	}
-.testimonial-details{margin-left: 40px; display:block;}
-.testimonial-details p{font-weight: bold; color: #022f45; font-size: 15px;line-height: 18px;  }
-
-#sidebar-right{margin-left: 60px;}
-#sidebar-right h3{margin:10px 0px 10px 0px; color: #ed822c;}
-
-#school-faq{
-	border-top: 1px solid #cecece;
-	margin: 20px 0px 20px 0px;
-	padding-top: 20px;
-	}
-#school-faq h1:before{
-	content: url(../images/icon-faq.png);
-	margin:0px 5px 0px 5px;
-	}
-#school-faq p{font-size: 14px; line-height: 18px;}
-
-
-.mail-graphic{float: right; margin-top: -35px;}
-.heading-blue{background: #365d70; padding: 5px 7px 5px 7px; color: white; font-weight: bold; font-size: 15px;width: 596px;}
-.block-grey{padding: 20px;background:#f3f1f1;width: 160px; text-align: center; margin: 10px 5px 10px 0px; float: left; height: 250px;}
-.block-grey h3{color: #365d70;font-family:Arial; font-size: 30px;background: url(/assets/bg-number-round.png) no-repeat ; width: 45px; height: 45px; text-align: center;padding:6px 5px 0px 0px; margin-left: 55px;}
-.block-grey h4{color: #365d70; font-size: 16px;margin-top: 13px;}
-
-.block-grey h4 a{text-decoration: none;color: #298ebf; line-height: 30px;}
-.block-grey h4 a:hover{color:#365d70;}
-
-
-/* -------------- ABOUT ------------------*/
-#about-content{}
-#about{}
-#about #main{margin-top: 30px;border-right: #ececec 1px solid; padding-right: 20px;margin-right: 10px;width: 660px;margin-bottom: 30px; }
- .about-links{font-weight: bold; }
- a.about-links:before{content: url(/assets/icon-triangle-orange.png); margin-right: 10px;}
-#about .employee{clear: both; padding: 20px 0px 20px 0px;}
-#about .employee img{float: left; margin-right: 50px; border: 3px solid #ececec;}
-#about .employee h4{color: #022f45; font-size: 18px; margin:0px;}
-#about .employee p{margin:5px 0px 5px 0px;}
-#about .employee strong{font-weight: normal;}
-#about #sidebar{margin-top: 30px;float: right;}
-#about #sidebar h3{color:#ed822c; }
-#about #sidebar .jobs{padding: 20px 0px 20px 0px; border-top: #cecece dashed 1px; border-bottom: #cecece dashed 1px; margin:30px 0px 20px 0px;}
-.line-light{height:1px; border-top:1px solid #ececec; width: 100%; margin-top: 0px;  clear:both;display: block;}
-#about h4{padding-top: 15px;}
-/* -------------- PRESS ------------------*/
-
-#press{padding: 40px 0px 40px 0px;}
-#press #main{border-right: 1px solid #ececec;padding-right: 50px;}
-#press #main h2{border-bottom:1px solid #ececec; }
-
-.logo-download{}
-.logo-download a{margin: 5px 0px 0px 0px; display: inline-block;}
-.logo-download a:before{content: url(/assets/icon-document.png); margin-right: 7px;float: left;}
-#logo-landscape{width: 160px; height: 90px; border: 1px solid #cecece; background: url(/assets/logo-horisontal.png);}
-#logo-square{width: 90px; height: 90px; border: 1px solid #cecece; background: url(/assets/logo-square.png);}
-#press img.press-logo{ border: 1px solid #ececec;text-align: right;}
-#press h3{font-size: 18px;}
-#press p{padding: 0px;}
-
-
-
-/* -------------- HELP ------------------*/
-
-#help{}
-#help h1{border-bottom: 1px solid #cecece;padding-bottom: 10px;}
-#help h2{font-size: 24px;}
-#help h4{font-size: 18px; color: #022f45;}
-#help strong{font-size: 14px;}
-#help #left{width: 430px;}
-#help #right{width: 430px;margin-left: 60px;}
-
-/* -------------- FAQ ------------------*/
-
-#faq{margin-top:30px;}
-#faq #faq-menu{background: #ececec;-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
-}
-#faq #faq-menu ul{list-style:none; padding: 7px 12px 7px 12px;}
-#faq #faq-menu ul li{margin: 7px 0px 7px 0px;}
-#faq #faq-menu ul li.separator{background:#cbcbcb; height: 1px;}
-#faq #faq-menu ul li a{text-decoration: none; font-size: 14px; font-weight: bold;color:#022f45; }
-#faq #faq-menu ul li a:hover{color: #3eaadc;}
-#faq #faq-menu ul li a.active{color: #3eaadc; }
-#faq #faq-main{margin-left: 70px; margin-bottom: 60px;}
-#faq #faq-main h2{font-size: 24px;}
-#faq #faq-main > ul{list-style: none;}
-#faq #faq-main > ul > li{border-top: 1px solid #ececec;padding:7px 0px 7px 0px;}
-#faq #faq-main > ul > li{}
-#faq #faq-main > ul > li a{text-decoration: none;color:#022f45; }
-#faq #faq-main > ul > li a:hover{color: #3eaadc;}
-#faq #faq-main > ul > h4{color:#022f45; }
-#faq #faq-main > ul ul {padding: 10px; margin-left: 10px;}
-#faq #faq-main > ul ul li {padding: 5px;}
-
-/* -------------- HOW IT WORKS ------------------*/
-
-#how-it-works-main{}
-#how-it-works-main #feature{width: 100%;height: 550px;border-bottom: 3px solid #dddcdc;top: -20px; position: relative;}
-#how-it-works-main #feature h1{width: 200px;float: left;margin-top: -10px;}
-#how-it-works-main #feature p{width: 680px; margin-top: 30px;float: right;font-size: 13px;}
-#how-it-works-main #feature .line{width: 100%;}
-#how-it-works-main #hiw-content{margin-top: 20px;}
-#how-it-works-main h4{font-size: 24px; color:#022f45; padding-top:40px;}
-#how-it-works-main p{font-size: 14px; line-height: 18px;}
-#how-it-works-main #left{text-align: right;padding-right:10px;}
-#how-it-works-main #right{text-align: left;padding-left:10px;}
-
-
-/* -------------- HOW-IT-WORKS Institutions and Schools ------------------*/
-
-#how-it-works #main{margin-right:70px;margin-top: 20px;}
-#how-it-works #main p{font-size: 15px;line-height:20px;}
-#how-it-works  h1{font-weight: normal;margin-bottom: 5px;}
-#how-it-works #main h4{color:#022f45; font-size: 18px;}
-#how-it-works #main .diagram{margin-left: 60px;}
-#how-it-works #sidebar{margin-top: 20px;}
-#how-it-works #sidebar h4{color:#022f45; font-size: 18px;}
-#how-it-works #sidebar p{font-size: 15px;line-height:20px;}
-#how-it-works #sidebar #testimonials{}
-#how-it-works #sidebar #testimonials h4:before{content: url(/assets/icon-testimonials.png); margin-right: 10px; float: left;margin-top: -5px;}
-#how-it-works #sidebar #testimonials img{margin-bottom:-10px; margin-right: 10px;}
-#how-it-works #sidebar #testimonials .line{background: #cecece;}
-#how-it-works #main ul{margin-left: 15px;font-size: 14px;}
-#how-it-works #main ul li{padding: 5px 0px 5px 0px;}
-
-/* -------------- investor-welcome-funded ------------------*/
-#welcome-investor{margin-top: -30px;}
-
-#investor-welcome-funded{}
-#investor-welcome-funded #main{
-  margin-top: 25px;
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
 }
 
-#welcome-investor #base-prospectus-label {
-  float: none;
-  margin-left: 5px;
-  font-size: 15px;
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
 }
 
-#investor-welcome-funded #main h1{border-bottom: 1px solid #cecece; font-weight: normal;}
-
-
-#investor-welcome-funded #main ul li{padding: 10px 0px 10px 0px;font-size: 15px;line-height: 18px;}
-#investor-welcome-funded #main input.continue-application {background: url(/assets/button-continue-application.png) no-repeat;display:inline-block; height:50px; width:258px;  float: left;margin-left: 30px; color: #ffffff; font-size: 20px; text-decoration: none;padding: 0px 0px 0px 0px;text-align: center; -webkit-appearance: none; border: 0px;}
-#investor-welcome-funded #main input.continue-application:hover{color: #0c415b; cursor: pointer;}
-#investor-welcome-funded #main .line{display: inline;float: left;width: 150px;}
-#investor-welcome-funded #main .disclaimer { clear: both; margin-top: 80px; }
-
-#investor-welcome-funded #sidebar{background: #E8F2F7; font-size: 13px;padding: 10px; margin:0px 0px 30px 60px;}
-#investor-welcome-funded #sidebar h4{font-size: 16px; color: #022f45;padding-top: 6px;}
-#investor-welcome-funded #sidebar ul{list-style: disc;float: left;display: block;list-style-position: inside;}
-#investor-welcome-funded #sidebar ul li{font-size: 12px; padding: 5px 0px 5px 0px;color: #022f45;}
-#investor-welcome-funded #sidebar .about-links{font-weight: normal;}
-#investor-welcome-funded #sidebar .pdf{font-size: 11px;margin-left: 3px;text-decoration: none;color: #022f45;}
-#investor-welcome-funded #sidebar  a.learn-link{text-decoration: none;}
-#investor-welcome-funded #sidebar  a.learn-link:before{content: url(/assets/icon-enquiry.png); position: relative; display: block; margin-top: -2px;margin-right: 4px;float: left;}
-
-/* -------------- investor-welcome-unfunded ------------------*/
-
-#investor-welcome-unfunded{}
-#investor-welcome-unfunded #main{}
-
-#investor-welcome-unfunded  h1{border-bottom: 1px solid #cecece; font-weight: normal;}
-#investor-welcome-unfunded #main ul{list-style:none;}
-#investor-welcome-unfunded #main ul img{position: relative; padding-right: 20px; float: left;padding-bottom: 20px;}
-#investor-welcome-unfunded #main ul li{padding: 10px 0px 10px 0px;font-size: 15px;line-height: 18px;}
-#investor-welcome-unfunded #main .continue-application a{background: url(/assets/button-continue-application.png) no-repeat;display:inline-block; height:50px; width:247px;  float: left;margin-left: 0px; color: #ffffff; font-size: 20px; text-decoration: none;padding: 13px 0px 0px 0px;text-align: center;}
-#investor-welcome-unfunded #main .continue-application a:hover{color: #0c415b;}
-#investor-welcome-unfunded #main .line{display: inline;float: left;width: 150px;}
-
-
-#investor-welcome-unfunded #sidebar{background: #E8F2F7; font-size: 13px;padding:10px 13px; margin:20px 0px 30px 60px;}
-#investor-welcome-unfunded #sidebar h4{font-size: 16px; color: #022f45;padding-top: 6px;}
-#investor-welcome-unfunded #sidebar ul{list-style: disc;float: left;display: block;list-style-position: inside;}
-#investor-welcome-unfunded #sidebar ul li{font-size: 12px; padding: 5px 0px 5px 0px;color: #022f45;}
-#investor-welcome-unfunded #sidebar .about-links{font-weight: normal;}
-#investor-welcome-unfunded #sidebar .pdf{font-size: 11px;margin-left: 3px;text-decoration: none;color: #022f45;}
-#investor-welcome-unfunded #sidebar  a.learn-link{text-decoration: none;}
-#investor-welcome-unfunded #sidebar  a.learn-link:before{content: url(/assets/icon-enquiry.png); position: relative; display: block; margin-top: -2px;margin-right: 4px;float: left; }
-
-#investor-welcome-unfunded .box{float:left; width: 550px;display: block;margin-bottom: 45px;}
-#investor-welcome-unfunded .box .left{float:left;width: 300px; border-right: 1px solid #cecece;margin-right: 20px;}
-#investor-welcome-unfunded .box .right{padding: 15px 10px 0px 0px;font-size: 15px;line-height: 20px; text-shadow: 1px 1px white;}
-#investor-welcome-unfunded .box .right:before{content:url(/assets/icon-lilly-bulb.png);float:left;margin-right: 9px;padding-bottom: 30px;}
-#investor-welcome-unfunded .box p.note{margin:15px 0px 0px 0px;}
-#investor-welcome-unfunded .box  label.error{
-	color: #754242;
-	margin-left:10px;
-	padding: 6px 4px 6px 4px;
-	text-align: left;
-	background:#f3b0b0;
-	margin-top:2px;
-	width: 239px;
-	margin:5px 0px;
-
-	}
-#investor-welcome-unfunded .box  label.error:before{content: url(/assets/red-corner-up.png);position:relative; bottom: 14px;left: 10px;}
-
-
-
-/* -------------- Investor Thank You ------------------*/
-#investor-thank-you-funded h1{font-size: 36px;}
-#investor-thank-you-funded p{font-size: 15px;line-height:20px;}
-#investor-thank-you-funded .box-grey{width: 900px; background: #eef0f1; border: 1px solid #cecfd0;padding: 15px 20px;}
-#investor-thank-you-funded .about-links{float: right;margin-top: 7px;color: #022f45;font-weight: normal;}
-#investor-thank-you-funded #share-block{text-align: center;margin-top: 50px;margin-bottom: 20px;}
-#investor-thank-you-funded #share-block .plus{font-size: 34px;top: -24px;padding: 0px 10px 0px 10px;position: relative;display: inline-block;color: #7a909b; }
-#investor-thank-you-funded #share-block .line-fade{float:right;margin-top:-190px;margin-left: 40px;position: relative;}
-#investor-thank-you-funded #share-block img{position: relative;}
-#investor-thank-you-funded #share-block a:hover img{width: 75px; margin-top: -1px;}
-#investor-thank-you-funded #share-block .orange{color:#ec7f15; }
-#investor-thank-you-funded #share-block p{font-size: 15px;}
-#investor-thank-you-funded #share-block #middle p{margin-top: 9px;}
-#investor-thank-you-funded #share-block #left .line-fade{left: 30px;}
-#investor-thank-you-funded ul{list-style-position: inside;}
-#investor-thank-you-funded ul li{margin-bottom: 10px;}
-#investor-thank-you-funded h3{margin: 0px 0px 10px 0px; font-size: 23px;border: none;}
-#investor-thank-you-funded h4{padding-bottom: 10px; font-size: 18px; font-weight: bold;color: #7a909b;}
-#investor-thank-you-funded a{text-decoration: none;}
-#investor-thank-you-funded .progress-bar-big{height: 31px; width: 100%;text-align: center;padding-top: 20px;}
-#investor-thank-you-funded .progress-bar-big .orange .green{background: url(/assets/bg-green-progress.png) repeat-x; border-right: #eef0f1 solid thin;width: 24%; height: 38px;float: left;}
-#investor-thank-you-funded .progress-bar-big .orange{width: 440px; height: 38px; background: url(/assets/bg-orange-progress.png) repeat-x;display: block;float: left;margin-top: -10px;}
-#investor-thank-you-funded .progress-bar-big .commitments{width: 200px;float: left;padding:0px 10px 0px 10px;text-align: right;position: relative;font-size: 16px; font-weight: bold; color: #14a34d; text-shadow: 1px 1px #fff;}
-#investor-thank-you-funded .progress-bar-big .funds-needed{float: left;margin:0px 10px 0px 10px;position: relative;display: inline-block;font-size: 16px; font-weight: bold; color: #ec7f15;text-shadow: 1px 1px #fff;text-align: left;width: 200px;}
-#investor-thank-you-funded .submit{margin-top: -10px;margin-bottom: 50px;float: right; width: 150px;margin-right:18px;}
-
-/* -------------- Coutry Out Of Scope ------------------*/
-
-#country-scope .box{float: left;padding-left: 10px;}
-#country-scope .box .blue-button{width: 140px;display: block;}
-#country-scope #main .main-p{padding-right:20px;}
-#country-scope p{font-family: 14px;line-height: 18px; }
-#country-scope #contact-us{margin-left: 40px;}
-#country-scope .line-fade{float: right; display: inline-block;margin-left: 10px; margin-top: -200px;}
-
-/* -------------- learn-more-unfunded ------------------*/
-
-#learn-more-unfunded{margin-top: -100px;}
-#learn-more-unfunded p{font-size: 14px;line-height: 20px;}
-#learn-more-unfunded ul{list-style: none;font-size: 14px;}
-#learn-more-unfunded #sidebar{margin-left: 30px;}
-#learn-more-unfunded .continue-application {clear:both;background: url(/assets/button-continue-application.png) no-repeat;display:inline-block; height:50px; width:258px;  float: none;margin-left: 30px; color: #ffffff; font-size: 20px; text-decoration: none;padding: 13px 0px 0px 0px;text-align: center; -webkit-appearance: none; border: 0px;}
-#learn-more-unfunded .continue-application:hover{color: #0c415b; cursor: pointer;}
-#learn-more-unfunded .line{display: inline;float: left;width: 150px;}
-
-/* -------------- learn-more-funded ------------------*/
-
-#learn-more-funded{margin-top: -100px;}
-#learn-more-funded p{font-size: 14px;line-height: 20px;}
-#learn-more-funded h3{font-family: Arial; font-size: 20px;}
-
-ul.orange-tick{list-style-image : url(/assets/icon-orange-tick.png)!important; list-style-position: outside;}
-ul.orange-tick li{margin-left: 20px;padding-left: 10px;font-size: 14px;margin-top: 10px;}
-#learn-more-funded ul li {margin-left: 20px;padding-left: 10px;font-size: 14px;margin-top: 10px;}
-#editor-content ul {list-style-image : url(/assets/icon-orange-tick.png)!important; list-style-position: outside;}
-#editor-content ul li {margin-left: 20px;padding-left: 10px;font-size: 14px;margin-top: 10px;}
-#learn-more-funded ul li img{}
-#learn-more-funded #main{}
-#learn-more-funded #sidebar{margin-left: 30px;}
-#learn-more-funded .features{margin-top: 20px; }
-#learn-more-funded .continue-application {clear:both;background: url(/assets/button-continue-application.png) no-repeat;display:inline-block; height:50px; width:258px;  float: none;margin-left: 30px; color: #ffffff; font-size: 20px; text-decoration: none;padding: 13px 0px 0px 0px;text-align: center; -webkit-appearance: none; border: 0px;}
-#learn-more-funded .continue-application:hover{color: #0c415b; cursor: pointer;}
-
-#learn-more-funded .line{display: inline;float: left;width: 150px;}
-
-#editor-content ul li {
-	margin: 15px 20px;
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
 }
 
-/* -------------- CONTACT ------------------*/
-
-#contact-feature{
-
-	background: url(/assets/bg-dark-texture.jpg);
-	border-bottom: #d8dbdc 4px solid;
-	width: 100%;
-	clear:both;
-	top:-20px;
-	padding: 20px 0px 20px 0px;
-	position: relative;
-
-	}
-#contact-feature h1 {border-bottom: 1px solid #cecece; padding:20px 0px 10px 0px; margin-bottom: 20px;}
-#contact-feature h3{color:#ed822c; }
-#contact-feature strong{font-weight: normal;}
-#contact-feature #applicants{border-left: 1px #cecece dashed; border-right: 1px #cecece dashed; padding: 0px 25px 0px 25px; height: 250px;}
-
-#contact-content{clear: both; padding: 10px 0px 10px 0px;}
-#contact-content h1{border: none; font-size: 24px;margin:0px;}
-#contact-content h2{font-size: 24px;}
-#contact-content ul{list-style:disc; list-style-position:outside;padding-left: 16px;}
-#contact-content ul li{padding: 4px 0px 4px 0px;}
-#contact-content ul li a{text-decoration:none;color: #64767f;}
-#contact-content ul li a:hover{color: #ec802b;}
-#contact-content #right{}
-
-.popup-header{border-bottom: 1px solid #cecece;padding: 10px 0px 10px 0px; }
-.popup-header h4{font-size: 20px;margin-top: -10px;}
-.popup-header h4:before{content:url(/assets/logo-heading.png); margin-right: 10px; margin-bottom: -4px; display: block; position: relative;float: left;}
-
-
-/* -------------- Investor School pages ------------------*/
-
-
-/* -------------- Cranfield ------------------*/
-
-#school-slider-cranfield .jshowoff{width: 100%; }
-#school-slider-cranfield .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-cranfield{background-color: #030f1b;width: 100%;}
-#school-slider-cranfield ul#slider{
-	height: 345px;
-	background-color: #030f1b;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-cranfield .slide-1{
-
-	background-image: url(/assets/slides/cranfield/Cranfield-slide01.jpg);
-	background-position: center;
-	height: 345px;
-	background-repeat: no-repeat;
-	}
-#school-slider-cranfield .slide-2{
-	background-image: url(/assets/slides/cranfield/Cranfield-slide02.jpg);
-	height: 345px;
-	background-position: center;
-	background-repeat: no-repeat;
-	}
-#school-slider-cranfield .slide-3{
-	background-image: url(/assets/slides/cranfield/Cranfield-slide03.jpg);
-	height: 345px;
-	background-position: center;
-    background-repeat: no-repeat;
-	}
-#school-slider-cranfield .slide-4{
-	background-image: url(/assets/slides/cranfield/Cranfield-slide04.jpg);
-	height: 345px;
-	background-position: center;
-	background-repeat: no-repeat;
-	}
-#school-slider-cranfield .slide-5{
-	background-image: url(/assets/slides/cranfield/Cranfield-slide05.jpg);
-	height: 345px;
-	background-position: center;
-	background-repeat: no-repeat;
-	}
-
-
-/* -------------- INSEAD ------------------*/
-
-#school-slider-insead .jshowoff{width: 100%; }
-#school-slider-insead .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-insead{background-color: #061512;width: 100%;}
-#school-slider-insead ul#slider{
-	height: 347px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-insead .slide-1{
-
-	background-image: url(/assets/slides/insead/INSEAD-slide01.jpg);
-	background-position: center;background-repeat: no-repeat;
-	height: 345px;
-	}
-#school-slider-insead .slide-2{
-	background-image: url(/assets/slides/insead/INSEAD-slide02.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	background-repeat: no-repeat;
-	}
-#school-slider-insead .slide-3{
-	background-image: url(/assets/slides/insead/INSEAD-slide03.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-insead .slide-4{
-	background-image: url(/assets/slides/insead/INSEAD-slide04.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-insead .slide-5{
-	background-image: url(/assets/slides/insead/INSEAD-slide05.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-
-
-/* -------------- London ------------------*/
-
-#school-slider-london .jshowoff{width: 100%; }
-#school-slider-london .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-london{background-color: #000518;width: 100%;}
-#school-slider-london ul#slider{
-	height: 347px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-london .slide-1{
-
-	background-image: url(/assets/slides/london/LBS-slide01.jpg);
-	background-position: center;background-repeat: no-repeat;
-	height: 345px;
-	}
-#school-slider-london .slide-2{
-	background-image: url(/assets/slides/london/LBS-slide02.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-london .slide-3{
-	background-image: url(/assets/slides/london/LBS-slide03.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-london .slide-4{
-	background-image: url(/assets/slides/london/LBS-slide04.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-london .slide-5{
-	background-image: url(/assets/slides/london/LBS-slide05.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-
-/* -------------- Manchester ------------------*/
-
-#school-slider-manchester .jshowoff{width: 100%; }
-#school-slider-manchester .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-manchester{background-color: #14061f;width: 100%;}
-#school-slider-manchester ul#slider{
-	height: 347px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-manchester .slide-1{
-
-	background-image: url(/assets/slides/manchester/MBS-slide01.jpg);
-	background-position: center;background-repeat: no-repeat;
-	height: 345px;
-	}
-#school-slider-manchester .slide-2{
-	background-image: url(/assets/slides/manchester/MBS-slide02.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-manchester .slide-3{
-	background-image: url(/assets/slides/manchester/MBS-slide03.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-manchester .slide-4{
-	background-image: url(/assets/slides/manchester/MBS-slide04.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-manchester .slide-5{
-	background-image: url(/assets/slides/manchester/MBS-slide05.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-
-/* -------------- Oxford ------------------*/
-
-#school-slider-oxford .jshowoff{width: 100%; }
-#school-slider-oxford .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-oxford{background-color: #020e1a;width: 100%;}
-#school-slider-oxford ul#slider{
-	height: 347px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-oxford .slide-1{
-
-	background-image: url(/assets/slides/oxford/SAID-slide01.jpg);
-	background-position: center;background-repeat: no-repeat;
-	height: 345px;
-	}
-#school-slider-oxford .slide-2{
-	background-image: url(/assets/slides/oxford/SAID-slide02.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-oxford .slide-3{
-	background-image: url(/assets/slides/oxford/SAID-slide03.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-oxford .slide-4{
-	background-image: url(/assets/slides/oxford/SAID-slide04.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-oxford .slide-5{
-	background-image: url(/assets/slides/oxford/SAID-slide05.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-
-/* -------------- CASS ------------------*/
-
-#school-slider-cass .jshowoff{width: 100%; }
-#school-slider-cass .jshowoff-slidelinks{margin-left: auto;margin-right: auto; width: 100px; display: block; float:none; margin-top: -10px; height: 8px;}
-
-#school-slider-cass{background-color: #000000;width: 100%;}
-#school-slider-cass ul#slider{
-	height: 347px;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	margin-top: -2px;
-	}
-#school-slider-cass .slide-1{
-
-	background-image: url(/assets/slides/cass/CASS-slide01.jpg);
-	background-position: center;background-repeat: no-repeat;
-	height: 345px;
-	}
-#school-slider-cass .slide-2{
-	background-image: url(/assets/slides/cass/CASS-slide02.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-cass .slide-3{
-	background-image: url(/assets/slides/cass/CASS-slide03.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-cass .slide-4{
-	background-image: url(/assets/slides/cass/CASS-slide04.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-#school-slider-cass .slide-5{
-	background-image: url(/assets/slides/cass/CASS-slide05.jpg);
-	height: 345px;
-	background-position: center;background-repeat: no-repeat;
-	}
-
-
-/* -------------- Alumni-Bio ------------------*/
-
-.alumni-bio-wrapper{
-	padding: 30px 0px 30px 0px;
-	margin-bottom: 30px;
-	min-height: 500px;
-
-}
-.alumni-bio-wrapper h1{
-		padding-bottom: 20px;
-	}
-.alumni-bio-wrapper h3{
-	font-size: 18px;
-}
-.alumni-bio-wrapper small{
-	font-style: italic !important;
-}
-.alumni-bio-wrapper img.shadow{
-	top: 0px;
-	position: relative;
-	margin-bottom: 20px;
-
-}
-.alumni-bio-wrapper .content-block{
-	background: #e2f1f6;
-	padding: 25px 25px;
-}
-.alumni-bio-wrapper .content-block .content {
-	position: relative;
-	right: -24px;
-}
-.alumni-bio-wrapper .content-block img{
-	border: #ffffff solid 4px;
-	margin-right: 20px;
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
 }
 
-.alumni-bio-wrapper .content-block p{
-	font-size: 16px;
-	color: #000000;
-	padding-left: 20px;
-	line-height: 21px;
+/**** disabling Isotope CSS3 transitions ****/
 
-}
-.alumni-bio-wrapper .content-block strong{
-	font-size: 16px;
-	color: #000000;
-	padding-top: 40px;
-	display: inline-block;
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
 }
 
-.alumni-bio-wrapper .left a{text-decoration: underline;}
-
-/* -------------- Ambassador ------------------*/
-
-#main .ambassador{}
-#main .ambassador h1{background: #34677f; color: #fff;padding: 13px 10px 10px 30px;}
-#main .ambassador p{ font-size: 14px; line-height: 18px;}
-#main .ambassador p.big{ font-size: 17px; line-height: 27px; padding-left: 15px;}
-#main .ambassador h5{ margin-left: 30px; font-size: 14px; font-weight: bold; padding-bottom: 10px; color: #496c8f;}
-#main .ambassador .wrapper{padding: 30px}
-#main .ambassador img{border: 1px solid #cacaca; margin: 20px 0px 30px 55px;}
-#main .ambassador-block{width: 940px;margin-bottom: 40px; margin-top: -35px;background: #f2f2f2; -moz-box-shadow: 0px 0px 4px #cecece;-webkit-box-shadow: 0px 0px 4px #cecece; box-shadow: 0px 0px 4px #cecece;padding-bottom:0px;}
-#main .link-long.last{margin-bottom: -40px;}
-#main .ambassador ul.benefit-list li{ margin-left: 30px; padding-bottom: 10px; font-size: 14px; line-height: 18px;}
-#main .ambassador .register{text-align: center; border-top: solid 1px #cecece;border-bottom: solid 1px #cecece;padding-bottom: 20px; margin: 10px 0px 20px 0px;}
-#main .ambassador .register .submit-hi{margin-top: 10px;}
-#main .ambassador .bottom{text-align: center;background: #34677f; color: #fff;clear: both; margin-top: 60px; padding: 7px; display: block;}
-#main .ambassador .bottom p {color: #fff;}
-#main .ambassador .bottom p a{color: #e26f25;}
-#main .ambassador .bottom p strong{color: #fff;}
-#main .ambassador .button-orange{background: #e26f25; font-family: 'Rokkitt', serif; color: #fff; font-size: 21px; text-shadow: 1px 1px 1px #8d4110; padding: 7px 12px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; }
-#main .ambassador .button-orange:hover{background: #d66013;}
-#main .ambassador .buttons{border-top: #22475a solid 1px ; display:block; margin-top: 30px; padding-left: 20px;}
-
-/* -------------- Match ------------------*/
-
-#main .match{}
-#main .match h1{background: #34677f; color: #fff;padding: 15px 10px 12px 30px; font-size: 28px;}
-#main .match p{ font-size: 14px; line-height: 20px;}
-#main .match p.big{ font-size: 17px; line-height: 27px; padding-left: 15px;}
-#main .match h5{ margin-left: 30px; font-size: 14px; font-weight: bold; padding-bottom: 10px; color: #496c8f;}
-#main .match .wrapper{padding: 30px}
-#main .match .right{text-align: center;}
-#main .match .divider{border-top: 1px solid #ccc; width: 100%;}
-#main .match img{margin: 10px 0px 10px 25px;}
-#main .match-block{width: 940px;margin-bottom: 40px; margin-top: -35px;background: #f2f2f2; -moz-box-shadow: 0px 0px 4px #cecece;-webkit-box-shadow: 0px 0px 4px #cecece; box-shadow: 0px 0px 4px #cecece;padding-bottom:0px;}
-#main .link-long.last{margin-bottom: -40px;}
-#main .match ul.benefit-list li{ margin-left: 30px; padding-bottom: 10px; font-size: 14px; line-height: 18px;}
-#main .match .register{text-align: center; border-top: solid 1px #cecece;border-bottom: solid 1px #cecece;padding-bottom: 20px; margin: 10px 0px 20px 0px;}
-#main .match .register .submit-hi{margin-top: 10px;}
-#main .match .bottom{text-align: center;background: #34677f; color: #fff;clear: both; margin-top: 60px; padding: 7px; display: block;}
-#main .match .bottom p {color: #fff;}
-#main .match .bottom p a{color: #e26f25;}
-#main .match .bottom p strong{color: #fff;}
-#main .match .button-orange{background: #e26f25; margin-right: 10px; font-family: 'Rokkitt', serif;color: #fff; font-size: 21px; text-shadow: 1px 1px 1px #8d4110; padding: 7px 12px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px; }
-#main .match .button-orange:hover{background: #d66013;}
-#main .match .buttons{border-top: #22475a solid 1px ; display:block; margin-top: 30px; padding-left: 20px;}
 
 
-/* -------------- FOOTER ------------------*/
-#footer.notification{border: none;}
-#footer.notification:after{display: none;}
 
-/* Tooltips */
-.form-divs .icon-enquiry-tip { background-image: url(/assets/icon-enquiry.png); width: 16px; height:16px; display: inline-block; margin-top: -2px;margin-right: 4px; float:none; }
