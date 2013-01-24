@@ -16,3 +16,9 @@
 //= require twitter/bootstrap
 //= require tiptip-min
 //= require jquery.isotope
+//= require jquery.facebox
+//= require_self
+
+$(function() {
+  jQuery('a[rel*=facebox]').facebox();
+});

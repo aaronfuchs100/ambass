@@ -35,7 +35,7 @@ $(function(){
   <div id = "design">
     <% @users.each do |user| %>
           <div class = "photo <%= user.region.try :downcase %>" title = "<%= "#{user.first_name} #{user.last_name} </p>" %>" >
-             <%= link_to image_tag(user.avatar.thumb, :class => "avatar"), user, data: {'toggle' => 'modal', 'target' => '#modal'}  %>
+             <%= link_to image_tag(user.avatar.thumb, :class => "avatar"), user, rel: 'facebox'  %>
           </div>
     <% end %>
   </div>
