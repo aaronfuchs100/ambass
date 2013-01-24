@@ -1,0 +1,21 @@
+<div id = "header-dark" class = "container_12 clearfix">
+  <div id = "logo" class = "grid_3">
+    <a href="/"><img src="/assets/logo-dark.png" alt="logo" /></a>
+  </div>
+  <div>
+    <ul class ="top-nav darker">
+    <% if defined?(current_user) && current_user %>
+        <li class="button-login">
+        <%= link_to "Logout", logout_path %></li>
+    <% else %>
+        <li><b>Login:</b></li>
+        <li><%= link_to("Investor", "https://prodigyfinance.com/login") %></li>
+      	<li>|</li>
+        <li><%= link_to("Student", "https://prodigyfinance.com/login") %></li>
+    <% end %>
+      <li>|</li>
+      <li><%= link_to 'Cookie Policy', '/cookie_policy' %></li>
+    </ul>
+  </div>
+  <%= render_navigation :context => :external %>
+</div>

@@ -1,0 +1,91 @@
+/* ie8 */
+
+#header .top-nav{
+	float: right;
+	list-style: none;
+	background-color: #4f8199;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	behavior: url(/assets/ie-css3.htc);
+	border-radius: 15px;
+	height: 15px;
+	display:block;
+	position: relative;
+	padding:20px 5px 0px 0px;
+
+	margin-top: -28px;
+	}
+#header ul.nav li a:hover{
+	padding-bottom: 26px;
+	}
+#header ul.nav li a.current{
+	padding: 10px 10px 5px 10px;
+
+	}
+#header ul.darker{}
+.your-tasks{border: red solid 1px;float:left;margin-left:-30px;display: block;}
+.task-messages{ float:left;}
+.task-head{background:#ffffff  !important;}
+
+.task-head a{background: #e9e9e9;}
+.task-details{background:#ffffff;border-left: 4px; clear:both;padding-left: 20px;}
+
+.textfield{line-height: 32px;}
+
+#footer ul {list-style: none;}
+#footer ul li a{
+	font-family: 'Rokkitt', serif;
+	font-size: 18px;
+	margin: 5px 0px 5px 0px;
+
+
+
+	}
+#footer ul li a{
+	color: #b6d3e2;
+	text-decoration:none;
+	}
+
+
+input.submit
+.form-a input.submit, .form-a input.submit-to-finish, .submit, .submitee{
+	background: #219dda !important;
+	-webkit-border-radius: 2px !important;
+	-moz-border-radius: 2px !important;
+	border-radius: 2px !important;
+	padding: 6px 8px 6px 8px;
+	display: block;
+	margin: 20px 0px 0px 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+
+	}
+
+#my-messages a.new-message-button{background: #3facdf !important; padding: 7px 8px 7px 8px; float: right; margin-top: -32px; color: white; text-decoration:none; -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	behavior: url(/assets/ie-css3.htc);
+	border-radius: 2px;
+}
+
+#my-messages a.new-message-button:hover{background: #0c415b !important;}
+
+#lcm-investor ul.all-students a{ text-decoration: none;}
+#lcm-investor ul.all-students li { position: relative; }
+#lcm-investor ul.all-students li .student-short .student-name{font-weight: bold; margin-top: 80px; display: block; }
+
+#lcm-investor ul.all-students li .student-short .student-status{top: -20px!important; position: relative; color: white; background: #d72424; text-align: center; padding: 3px ;height: 15px;font-size: 13px; margin-top:-32px; display: block;}
+
+#lcm-investor ul.all-students li .details{visibility: hidden; position:absolute; background: #ffffff; padding: 10px; z-index: 200; width: 250px; box-shadow: 0px 1px 3px #464646;  display: block; bottom:-150px; border: 1px solid #ececec;}
+
+table.investmore-more-table input.submit { float: left !important;  margin-left: 0px !important;}
+table.investmore-more-table input.textfield {float: left !important;margin-top: 15px !important; }
+
+#faq-box, #tweets, #filter-box { border: 1px solid #ececec;}
+ul.ui-tabs-nav { top: -37px !important;}

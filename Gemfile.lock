@@ -163,6 +163,8 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simple-navigation (3.5.1)
+      activesupport (>= 2.3.2)
     simple_form (2.0.4)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
@@ -207,6 +209,7 @@ DEPENDENCIES
   rails-footnotes
   rmagick
   sass-rails (~> 3.2.3)
+  simple-navigation
   simple_form
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)

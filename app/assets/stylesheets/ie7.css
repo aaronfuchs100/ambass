@@ -1,0 +1,127 @@
+/* ie7 */
+#header .top-nav{
+	float: right;
+	list-style: none;
+	background-color: #4f8199;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	height: 20px;
+	display:block;
+	position: relative;
+	padding:20px 5px 0px 0px;
+	margin-top: -28px;
+	}
+#header ul.nav li a:hover{
+	padding-bottom: 34px;
+	}
+#header ul.nav li a.current{
+	padding: 5px 10px 5px 10px;
+
+	}
+
+input.submit
+{background: #219dda; border: 0px !important;-webkit-border-radius: none !important;
+	-moz-border-radius: none !important;
+	border-radius: none !important;behavior: none;}
+
+#borrowers-main{background: url(/assets/bg-dark-texture.jpg); padding:30px 0px 30px 0px; position:relative; top:-80px;margin-bottom: -85px;display: block;}
+#bar-borrowers .form-c .droplist{height: 36px;font-size: 16px;color: #909090;margin-top: 7px;}
+#investor-front-main{margin-top: 50px;}
+.textfield{line-height: 34px;}
+#breadcrumbs{margin-top: -60px;}
+#contact-feature{top: -40px;position: relative;display: block;height: 390px;margin-bottom:20px;}
+#contact-feature .breadcrumbs{top: -80px;position: relative;display: block;}
+
+
+/* Dashboard */
+.button-about-application {
+}
+
+#faq-content #faq-menu ul li{margin:0px; padding:0px;}
+#faq-content #faq-menu ul li.separator{margin:0px 0px 7px 0px;}
+
+.task-head{padding:5px 0px 5px 0px;}
+.enabled .task-head{background:#ffffff; height: 35px; display: block;padding:5px 0px 5px 36px;margin-left: 45px; text-decoration: none;}
+.disabled .task-head{background:#ffffff; height: 35px; display: block; padding-left: 36px;margin-left: 45px; text-decoration: none;}
+.stage-link.open{background:#e9e9e9;}
+.stage-link{background:#e9e9e9;}
+
+
+
+#steps .disabled .task-head a{background:#e9e9e9;}
+.disabled .task-head h3 a{color: #858585;}
+.task-status{top:-5px;position:relative;}
+.task-counter{bottom:-3px; position:relative;}
+#steps .state{margin-top: -15px;}
+a.file-delete{position: relative; top: -22px;}
+
+#looking-to-invest{
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 20px;
+	margin-top:0px;
+	padding: 0px 0px 10px;
+	display: block;
+
+	}
+
+#header a.share-tag{
+
+	margin:17px 0px 7px 0px;
+
+	}
+.button-about-application.closed{margin-top: -35px;}
+.button-about-application.open{margin-top: -35px;}
+
+#content ul.side-nav li .progress-bar{top: -16px; position: relative;}
+
+.facebox_overlayBG {background-image: url(/assets/bg-overlay-img.png);}
+#my-messages #messages-main #messages-sidebar p {margin: 0px;padding:0px;}
+#my-messages #messages-main #messages-sidebar ul li a .message-icons{display:none;}
+#my-messages #messages-main #messages-sidebar ul li a .message-body{margin-left: 0px;}
+
+#my-messages #messages-header{height: 33px;}
+#my-messages #messages-header a.new-message-button{position: relative; top: -30px;display:block;}
+#my-messages #messages-header .droplist{position: relative; top: -25px;display:block;}
+
+.lilly-line-spacer{right: 445px;  position: relative; }
+
+#hellobar-content{margin-top: -10px;}
+#hellobar a.arrow-up{margin-top: -24px;}
+#lcm-investor #account-number{clear:both;display:block;margin-bottom: 20px;}
+#lcm-investor .header{display:block;top: 30px;}
+#lcm-investor #lcm-investor-content{top: 20px;display:block;}
+
+
+#side-nav-process
+{
+	border: 1px solid transparent; /* Otherwise border styling on contained li's does not show up */
+}
+
+div .form-a select.droplist
+{
+	margin-top: 7px;
+}
+
+
+.remove_nested_fields{
+background: #219dda; border: 0px !important;-webkit-border-radius: none !important;
+	-moz-border-radius: none !important;
+	border-radius: none !important;}
+
+.button-grey{background: #219dda; border: 0px !important;-webkit-border-radius: none !important;
+	-moz-border-radius: none !important;
+	border-radius: none !important;}
+
+input.submit-to-finish{background: #219dda; border: 0px !important;-webkit-border-radius: none !important;
+	-moz-border-radius: none !important;
+	border-radius: none !important;}
+
+
+	#my-messages a.new-message-button{background: #3facdf !important; padding: 7px 8px 7px 8px; float: right; margin-top: -32px; color: white; text-decoration:none; -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	behavior: url(/assets/ie-css3.htc);
+	border-radius: 2px;
+}
+
+#my-messages a.new-message-button:hover{background: #0c415b !important;}
